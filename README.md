@@ -83,5 +83,6 @@ Larger dataset will drastically improve performance of the model
 	Produce more creative and controlled outputs than temperature sampling
 
 
-License:
+LICENSE:
+
 This project is released under the MIT License — feel free to modify and expand.
