@@ -2,6 +2,7 @@ Crazy Prophet is a text-generation project built using a custom-trained LSTM neu
 The model is trained on a collection of literary, mystical, and archaic texts to generate new “prophecies” in a dramatic and poetic style.
 
 HOW TO USE:
+
 1.Clone the repository:
 	
 	git clone https://github.com/Saskato/crazy-prophet.git
@@ -49,3 +50,38 @@ Or by running this code in your program:
     	temperature=0.9 #temeperature determines how often generator going to pick the next predicted word. Higher temperature meanse the higher probability of not picking best prediction(put the value in range 0-2)
 		
 	))
+
+Moodel structure:
+
+	Embedding → LSTM → LSTM → Dense → Softmax
+	Embedding size: 128
+	LSTM layers: 2 × 256 units
+	Sequence length: 40 tokens
+	Loss: Sparse Categorical Crossentropy
+	Optimizer: Adam
+
+IMPROVEMENTS:
+
+1)Increase dataset by adding:
+	mythology texts
+	religious prophecies
+	ancient literature
+	medieval chronicles
+	poetic texts
+	esoteric writings
+Larger dataset will drastically improve performance of the model
+	
+2)Change from LSTM to a Transformer architecture
+	Faster training
+	Better long-range context
+	More coherent prophecies
+	
+3)Build a simple UI
+	Make interactions with the model easier
+	
+4)Sample improvements
+	Produce more creative and controlled outputs than temperature sampling
+
+
+License:
+This project is released under the MIT License — feel free to modify and expand.
